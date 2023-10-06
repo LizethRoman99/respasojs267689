@@ -6,6 +6,17 @@ git branch -M main
 git remote add origin https://github.com/LizethRoman99/respasojs267689.git
 git push -u origin main
 
-
+vincular el proyecto a git hub solo se hace una vez
 git init 
 git add .
+git commit -m "Primer Commit"
+ git config user.email "lixeth1999mail.com"
+git config user.name "LizethRoman99"
+git remote add origin https://github.com/LizethRoman99/respasojs267689.git
+git push -u origin main
+
+como actualizar el repositorio
+git add .
+git commmit -m "Segundo Commit"
+git push -u origin main
+
