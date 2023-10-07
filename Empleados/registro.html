@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h2>Formulario de registro de un empleado</h2>
+    <form>
+        <label for="nombre-completo">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required><br><br>
+
+        <label for="correo-electronico">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular" required><br><br>
+
+        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required><br><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+        <label for="confirmacion-contrasena">Confirmación de contraseña:</label>
+        <input type="password" id="confirmacion" name="confirmacion" required><br><br>
+
+        <label for="seguridad-social">Seguridad social:</label>
+        <select id="seguridad" name="seguridad" required>
+            <option value="sura">Sura</option>
+            <option value="nueva-eps">Nueva EPS</option>
+            <option value="coomeva">Coomeva</option>
+        </select>
+        <br><br>
+
+
+        <label for="fecha-inicio-contrato">Fecha de inicio de contrato:</label>
+        <input type="date" id="fecha-inicio-contrato" name="fecha-inicio-contrato" required><br><br>
+
+        <label for="fecha-terminacion-contrato">Fecha de terminación de contrato:</label>
+        <input type="date" id="fecha-terminacion-contrato" name="fecha-terminacion-contrato" required><br><br>
+
+        <button type="submit" id="btnEnviar">Enviar</button>
+
+    </form>
+
+    <!-- Tabla para mostrar los empleados -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre Completo</th>
+                <th>Cédula</th>
+                <th>Correo Electrónico</th>
+                <th>Celular</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Seguridad Social</th>
+            </tr>
+        </thead>
+        <h2>Empleados registrados</h2>
+        <tbody id="tabla-empleados">
+            <!-- Aquí se insertarán los datos de los empleados -->
+        </tbody>
+    </table>
+
+    <!-- Script JavaScript -->
+    <script src="/Empleados/registro.js"></script>
+</body>
+
+</html>

@@ -20,3 +20,5 @@ git add .
 git commmit -m "Segundo Commit"
 git push -u origin main
 
+clonar
+git clone https://github.com/dalzlad/repasoJS_2670689.git
