@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Crear una nueva fila en la tabla con los datos del empleado
         const fila = document.createElement("tr");
         fila.innerHTML = `
+  
         <td>${nombre.value}</td>
         <td>${cedula.value}</td>
         <td>${correo.value}</td>
@@ -83,7 +84,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Limpiar el formulario después de agregar un empleado
         formulario.reset();
 
-        alert('Empleado registrado correctamente.');
+        Swal.fire(
+            'Empleado registrado correctamente',
+            '',
+            'success'
+          )
     });
 });
 
